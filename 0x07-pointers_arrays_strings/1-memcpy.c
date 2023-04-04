@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * _memcpy - funiction copies @n bytes from memory area @scr
+ * _memcpy - function copies @n bytes from memory area @src
  * to memory area @dest
  *
  * @n: function copies
  *
- * @scr: bytes from memory area 
- * 
+ * @src: bytes from memory area
+ *
  * @dest: to memory area
  *
- * Return: na pointer to @dest
+ * Return: a pointer to @dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
@@ -18,8 +18,9 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (i < n)
 	{
-		dest[i] = scr[i];
+		dest[i] = src[i];
 		i++;
 	}
+
 	return (dest);
 }
